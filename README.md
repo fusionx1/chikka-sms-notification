@@ -3,7 +3,8 @@ This script shows how easy it is to integrate Chikka SMS notifications from your
 
 Instructions
 
-[Enable Incoming Webhooks](https://api.chikka.com/docs/getting-started#register-your-application) for your Chikka SMS notifications instance.
+[Sign up and Register your Chikka Application](https://api.chikka.com/docs/getting-started#register-your-application) from your Chikka SMS Website.
+
 Copy the following variables:
 
 1. chikka_client_id
@@ -12,6 +13,7 @@ Copy the following variables:
 
 into a file called secrets.json and store it in the private files directory of every environment where you want to trigger Slack notifications.
 
+  ```
   $> echo '{"chikka_client_id": "xxxxxxxxxxxxxxxxx", "chikka_client_secret": "xxxxxxxxxxxxxx", "chikka_accesscode": "xxxxxxxxxxxxxx"}' > secrets.json
   # Note, you'll need to copy the secrets into each environment where you want to trigger Chikka SMS notifications.
   $> `terminus site connection-info --env=dev --site=your-site --field=sftp_command`
@@ -20,6 +22,7 @@ into a file called secrets.json and store it in the private files directory of e
   sftp> mkdir private
   sftp> cd private
   sftp> put secrets.json
+  ```
   
 Add the example chikka-sms-notification.php script to the private directory in the root of your site's codebase, that is under version control. Note this is a different private directory than where the secrets.json is stored.
 
