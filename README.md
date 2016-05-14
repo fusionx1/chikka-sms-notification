@@ -12,7 +12,7 @@ Instructions
  * chikka_client_secret
  * chikka_accesscode
 
-  into a file called secrets.json and store it in the [private files](https://pantheon.io/docs/articles/sites/private-files/) directory of every environment where you want to trigger Chikka SMS notifications.
+  into a file called `secrets.json` and store it in the [private files](https://pantheon.io/docs/articles/sites/private-files/) directory of every environment where you want to trigger Chikka SMS notifications.
 
   ```
   $> echo '{"chikka_client_id": "xxxxxxxxxxxxxxxxx", "chikka_client_secret": "xxxxxxxxxxxxxx", "chikka_accesscode": "xxxxxxxxxxxxxx"}' > secrets.json
@@ -25,9 +25,9 @@ Instructions
   sftp> put secrets.json
   ```
   
-3. Add the example chikka-sms-notification.php script to the private directory in the root of your site's codebase, that is under version control. Note this is a different private directory than where the secrets.json is stored.
+3. Add the example `chikka-sms-notification.php` script to the private directory in the root of your site's codebase, that is under version control. Note this is a different private directory than where the secrets.json is stored.
 
-4. Add Quicksilver operations to your pantheon.yml
+4. Add Quicksilver operations to your `pantheon.yml`
 
 5. Test a deploy out!
 
@@ -35,7 +35,7 @@ Optionally, you may want to use the terminus workflows watch command to get imme
 
 Example pantheon.yml
 
-Here's an example of what your pantheon.yml would look like if this were the only Quicksilver operation you wanted to use. Pick and choose the exact workflows that you would like to see notifications for.
+Here's an example of what your `pantheon.yml` would look like if this were the only Quicksilver operation you wanted to use. Pick and choose the exact workflows that you would like to see notifications for.
 
 ```
 api_version: 1
