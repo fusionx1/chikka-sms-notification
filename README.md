@@ -3,7 +3,7 @@ This script shows how easy it is to integrate Chikka SMS notifications from your
 
 Instructions
 
-Enable Incoming Webhooks for your Slack instance.
+Enable Incoming Webhooks for your Chikka SMS notifications instance.
 Copy the following variables:
 
 1. chikka_client_id
