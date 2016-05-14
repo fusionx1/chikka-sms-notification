@@ -5,8 +5,6 @@
 Thanks to the author of slack notification i was able to integrate sms chikka api to quicksilver. 
 This also show you how to manage API keys outside of your site repository.
 
-**! Currently SMS Chikka only works in the Phillippines or if you activated your roaming
-
 Instructions
 
 1. [Sign up and Register your Chikka Application](https://api.chikka.com/docs/getting-started#register-your-application) from your Chikka SMS Website.
@@ -41,6 +39,9 @@ Optionally, you may want to use the terminus workflows watch command to get imme
 Example pantheon.yml
 
 Here's an example of what your `pantheon.yml` would look like if this were the only Quicksilver operation you wanted to use. Pick and choose the exact workflows that you would like to see notifications for.
+
+`*Currently SMS Chikka only works in the Phillippines or if you activated your roaming`
+
 
 ```
 api_version: 1
