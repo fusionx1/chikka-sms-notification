@@ -1,5 +1,7 @@
 #**SMS Notification using Chikka API**
 
+![Sample SMS Notification](http://screencast.com/t/APYexkHFCd)
+
 This script shows how easy it is to integrate Chikka SMS notifications from your Pantheon project using Quicksilver. As a bonus, we also show you how to manage API keys outside of your site repository.
 
 Instructions
