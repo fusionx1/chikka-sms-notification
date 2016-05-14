@@ -12,7 +12,7 @@ Instructions
  * chikka_client_secret
  * chikka_accesscode
 
-into a file called secrets.json and store it in the [private files](https://pantheon.io/docs/articles/sites/private-files/) directory of every environment where you want to trigger Chikka SMS notifications.
+  into a file called secrets.json and store it in the [private files](https://pantheon.io/docs/articles/sites/private-files/) directory of every environment where you want to trigger Chikka SMS notifications.
 
   ```
   $> echo '{"chikka_client_id": "xxxxxxxxxxxxxxxxx", "chikka_client_secret": "xxxxxxxxxxxxxx", "chikka_accesscode": "xxxxxxxxxxxxxx"}' > secrets.json
