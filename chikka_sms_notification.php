@@ -36,7 +36,7 @@ switch($_POST['wf_type']) {
     - ' . htmlentities($message);
     break;
   default:
-    $text = "Workflow $workflow_description<br />" . $_POST['qs_description'];
+    $text = "Workflow $workflow_description" . $_POST['qs_description'];
     break;
 }
 
