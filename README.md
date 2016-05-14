@@ -1,16 +1,16 @@
-*SMS Notification using Chikka API*
+**SMS Notification using Chikka API**
 
 This script shows how easy it is to integrate Chikka SMS notifications from your Pantheon project using Quicksilver. As a bonus, we also show you how to manage API keys outside of your site repository.
 
 Instructions
 
-1. [Sign up and Register your Chikka Application](https://api.chikka.com/docs/getting-started#register-your-application) from your Chikka SMS Website.
+* 1. [Sign up and Register your Chikka Application](https://api.chikka.com/docs/getting-started#register-your-application) from your Chikka SMS Website.
 
-2. Copy the following variables:
+* 2. Copy the following variables:
 
-a. chikka_client_id
-b. chikka_client_secret
-c. chikka_accesscode
+ * a. chikka_client_id
+ * b. chikka_client_secret
+ * c. chikka_accesscode
 
 into a file called secrets.json and store it in the [private files](https://pantheon.io/docs/articles/sites/private-files/) directory of every environment where you want to trigger Chikka SMS notifications.
 
@@ -25,10 +25,10 @@ into a file called secrets.json and store it in the [private files](https://pant
   sftp> put secrets.json
   ```
   
-3. Add the example chikka-sms-notification.php script to the private directory in the root of your site's codebase, that is under version control. Note this is a different private directory than where the secrets.json is stored.
+* 3. Add the example chikka-sms-notification.php script to the private directory in the root of your site's codebase, that is under version control. Note this is a different private directory than where the secrets.json is stored.
 
-4. Add Quicksilver operations to your pantheon.yml
-5. Test a deploy out!
+* 4. Add Quicksilver operations to your pantheon.yml
+* 5. Test a deploy out!
 
 Optionally, you may want to use the terminus workflows watch command to get immediate debugging feedback. You may also want to customize your notifications further. 
 
