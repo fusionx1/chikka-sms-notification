@@ -12,7 +12,7 @@ Copy the following variables:
 
 into a file called secrets.json and store it in the private files directory of every environment where you want to trigger Slack notifications.
 
-  $> echo '{"chikka_client_id": "f425c39deff1c7d688f96670df193f0144e26490163049092bcb22dfd9fb51a5", "chikka_client_secret": "c9d85dad4577df1d0e5d1ad09190c7fc3504652585e8271e162af353cd97ac35", "chikka_accesscode": "2929077771", "slack_channel": "#dcamp2016-pantheon", "slack_url": "https://hooks.slack.com/services/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"}' > secrets.json
+  $> echo '{"chikka_client_id": "xxxxxxxxxxxxxxxxx", "chikka_client_secret": "xxxxxxxxxxxxxx", "chikka_accesscode": "xxxxxxxxxxxxxx"}' > secrets.json
   # Note, you'll need to copy the secrets into each environment where you want to trigger Chikka SMS notifications.
   $> `terminus site connection-info --env=dev --site=your-site --field=sftp_command`
       Connected to appserver.dev.d1ef01f8-364c-4b91-a8e4-f2a46f14237e.drush.in.
