@@ -15,15 +15,17 @@ into a file called secrets.json and store it in the private files directory of e
   $> echo '{"chikka_client_id": "xxxxxxxxxxxxxxxxx", "chikka_client_secret": "xxxxxxxxxxxxxx", "chikka_accesscode": "xxxxxxxxxxxxxx"}' > secrets.json
   # Note, you'll need to copy the secrets into each environment where you want to trigger Chikka SMS notifications.
   $> `terminus site connection-info --env=dev --site=your-site --field=sftp_command`
-      Connected to appserver.dev.d1ef01f8-364c-4b91-a8e4-f2a46f14237e.drush.in.
+      Connected to appserver.dev.xxxxxxx-xxxxxx-xxxxx-xxxxx.drush.in.
   sftp> cd files  
   sftp> mkdir private
   sftp> cd private
   sftp> put secrets.json
+  
 Add the example chikka-sms-notification.php script to the private directory in the root of your site's codebase, that is under version control. Note this is a different private directory than where the secrets.json is stored.
 
 Add Quicksilver operations to your pantheon.yml
 Test a deploy out!
+
 Optionally, you may want to use the terminus workflows watch command to get immediate debugging feedback. You may also want to customize your notifications further. 
 
 Example pantheon.yml
