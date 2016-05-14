@@ -32,6 +32,7 @@ Example pantheon.yml
 
 Here's an example of what your pantheon.yml would look like if this were the only Quicksilver operation you wanted to use. Pick and choose the exact workflows that you would like to see notifications for.
 
+```
 api_version: 1
 
 workflows:
@@ -50,3 +51,4 @@ workflows:
         - type: webphp
           description: send sms when clearing cache
           script: private/scripts/chikka_sms_notification.php
+```
