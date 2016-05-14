@@ -4,7 +4,7 @@ workflows:
   deploy:
     after:
         - type: webphp
-          description: send sms notification on deploy
+          description: send sms on deploy
           script: private/scripts/chikka_sms_notification.php
   sync_code:
     after:
@@ -16,4 +16,3 @@ workflows:
         - type: webphp
           description: send sms when clearing cache
           script: private/scripts/chikka_sms_notification.php
-
